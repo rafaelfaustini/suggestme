@@ -1,6 +1,6 @@
 <?php
 public class Config{
-  private SuggestionBoxClasses;
+  private $SuggestionBoxClasses = ['suggestionBox','input'];
 
 
 }
