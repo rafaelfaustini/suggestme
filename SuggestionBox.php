@@ -18,6 +18,10 @@ class SuggestionBox {
   }
 
   private function checkPOST(){
+    /*
+    It's not necessary a loop checking for the POST, everytime the POST happens, the page is reloaded and the $_POST variables are filled.
+    Then, when the form is submited, the page reloads and when the object is recreated, this method checks the POST and does what it mean to do
+    */
     $name = $this->getName();
     $content = $_POST[$name];
     if ($_SERVER['REQUEST_METHOD'] === 'POST') { // Works like a POST listener
